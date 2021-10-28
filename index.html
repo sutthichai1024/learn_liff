@@ -148,6 +148,7 @@
       await liff.init({ liffId: "1656575595-Y7yoroQA" })
 
       liff.ready.then(() => {
+        console.log("Ready")
         document.getElementById('isLoggedIn').append(liff.isLoggedIn())
         if (liff.isInClient()) {
           getEnvironment()
